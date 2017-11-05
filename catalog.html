@@ -36,7 +36,7 @@
 
     <h1 class="catalog-name">Магазин готовых шаблонов</h1>
 
-<!--                        ФИЛЬТР КАТАЛОГА                          -->
+    <!--                        ФИЛЬТР КАТАЛОГА                          -->
 
     <section class="filters">
       <h2 class="visually-hidden">Параметры фильтра</h2>
@@ -45,7 +45,7 @@
       <!--дальше будет форма-->
     </section>
 
-<!--                             КАТАЛОГ                            -->
+    <!--                             КАТАЛОГ                            -->
 
     <section class="catalog">
       <h2 class="visually-hidden">Список шаблонов</h2>
@@ -65,64 +65,76 @@
       <ul class="catalog-list">
         <li class="catalog-item">
           <div class="item-price">
-            <h3>SEDONA</h3>
+            <h3>
+              <a class="item-name" href="">SEDONA</a>
+            </h3>
             <p>Информационный сайт для туристов</p>
             <a class="catalog-price-button" href="">9 900 РУБ.</a>
           </div>
-          <a href="catalog-sedona.html">
+          <p class="item-image">
             <img src="" width="150" height="300" alt="Информационный сайт для туристов Седона">
-          </a>
+          </p>
         </li>
         <li class="catalog-item">
           <div class="item-price">
-            <h3>PINK APP</h3>
+            <h3>
+              <a class="item-name" href="">PINK APP</a>
+            </h3>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
             <a class="catalog-price-button" href="">9 900 РУБ.</a>
           </div>
-          <a href="catalog-pink.html">
+          <p class="item-image">
             <img src="" width="150" height="300" alt="Продуктовый лендинг приложения
              для iOS и Android PINK APP">
-          </a>
+          </p>
         </li>
         <li class="catalog-item">
           <div class="item-price">
-            <h3>BARBERSHOP</h3>
+            <h3>
+              <a class="item-name" href="">BARBERSHOP</a>
+            </h3>
             <p>Сайт салона красоты. Для мужчин, да.</p>
             <a class="catalog-price-button" href="">9 900 РУБ.</a>
           </div>
-          <a href="catalog-borodinski.html">
+          <p class="item-image">
             <img src="" width="150" height="300" alt="Барбершоп Бородинский">
-          </a>
+          </p>
         </li>
         <li class="catalog-item">
           <div class="item-price">
-            <h3>MISHKA</h3>
+            <h3>
+              <a class="item-name" href="">MISHKA</a>
+            </h3>
             <p>Интернет-магазин вязанных игрушек</p>
             <a class="catalog-price-button" href="">9 900 РУБ.</a>
           </div>
-          <a href="catalog-mishka.html">
+          <p class="item-image">
             <img src="" width="150" height="300" alt="Интернет-магазин вязанных игрушек MISHKA">
-          </a>
+          </p>
         </li>
         <li class="catalog-item">
           <div class="item-price">
-            <h3>A PLUS</h3>
+            <h3>
+              <a class="item-name" href="">A PLUS</a>
+            </h3>
             <p>Лендинг курсов повышения квалификации</p>
             <a class="catalog-price-button" href="">9 900 РУБ.</a>
           </div>
-          <a href="catalog-aplus.html">
+          <p class="item-image">
             <img src="" width="150" height="300" alt="Лендинг курсов повышения квалификации A PLUS">
-          </a>
+          </p>
         </li>
         <li class="catalog-item">
           <div class="item-price">
-            <h3>КВАСТ</h3>
+            <h3>
+              <a class="item-name" href="">КВАСТ</a>
+            </h3>
             <p>Промо-сайт производителя крафтового пива</p>
             <a class="catalog-price-button" href="">9 900 РУБ.</a>
           </div>
-          <a href="catalog-kvast.html">
+          <p class="item-image">
             <img src="" width="150" height="300" alt="Промо-сайт производителя крафтового пива Кваст">
-          </a>
+          </p>
         </li>
       </ul>
       <ul class="pagination-list">
@@ -133,7 +145,7 @@
       </ul>
     </section>
 
-<!--                             КАРТА                            -->
+    <!--                             КАРТА                            -->
 
     <section class="map">
 
@@ -150,7 +162,7 @@
     </section>
   </main>
 
-<!--                             ПОДВАЛ                            -->
+  <!--                             ПОДВАЛ                            -->
 
   <footer class="footer">
     <div class="footer-social">
@@ -165,17 +177,28 @@
           <a class="social-butoon" href="#">Инстаграм</a>
         </li>
       </ul>
-      <p class="footer-slogan">
-        <b>Давайте дружить, это выгодно!</b>
-      </p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+    <p class="footer-slogan">
+      <b>Давайте дружить, это выгодно!</b>
+    </p>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
 
-<!--                  МОДАЛЬНОЕ ОКНО ОБРАТНОЙ СВЯЗИ               -->
+  <!--                  МОДАЛЬНОЕ ОКНО ОБРАТНОЙ СВЯЗИ               -->
 
   <section class="modal modal-message">
     <h2>Напишите нам</h2>
-    <!--дальше будет форма-->
+    <form class="feedback" action="/echo" method="post">
+      <div class="half-width">
+        <label for="user-field-id">Ваше имя:</label>
+        <input id="user-field-id" type="text" name="username" placeholder="Представьтесь пожалуйста">
+      </div>
+      <div class="half-width">
+        <label for="email-id">Ваш e-mail:</label>
+        <input id="email-id" type="text" name="username" placeholder="Для отправки ответа">
+      </div>
+      <label for="review">Текст письма:</label>
+      <textarea rows="5" placeholder="В свободной форме"></textarea>
     <span class="modal-close">X</span>
   </section>
 </body>

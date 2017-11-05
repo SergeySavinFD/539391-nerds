@@ -36,7 +36,7 @@
 
     <h1 class="visually-hidden">Дизайн студия Нёрдс</h1>
 
-<!--                             СЛАЙДЕР                            -->
+    <!--                             СЛАЙДЕР                            -->
 
     <section class="slider-features-1">
       <h2 class="visually-hidden">Приемущества</h2>
@@ -50,7 +50,7 @@
         <img src="" width="280" height="200">
       </figure>
     </section>
-
+    <!--
     <section class="slider-features-2">
       <h2 class="visually-hidden">Приемущества-2</h2>
       <p>
@@ -76,8 +76,8 @@
         <img src="" width="280" height="200">
       </figure>
     </section>
-
-<!--                             ПРЕВЬЮ КАТАЛОГА                            -->
+  -->
+    <!--                             ПРЕВЬЮ КАТАЛОГА                            -->
 
     <section class="preview-catalog">
       <h2 class="visually-hidden">Каталог</h2>
@@ -103,7 +103,7 @@
       </ul>
     </section>
 
-<!--                             О КОМПАНИИ                            -->
+    <!--                             О КОМПАНИИ                            -->
 
     <section class="about-us">
       <h2 class="visually-hidden">О нас</h2>
@@ -152,29 +152,29 @@
       </table>
     </section>
 
-<!--                             КЛИЕНТЫ                            -->
+    <!--                             КЛИЕНТЫ                            -->
 
     <section class="clients">
       <h2 class="visually-hidden">Клиенты</h2>
       <ul class="clients-list">
         <li class="clients-logo">
           <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="http://placehold.it/150x100" width="30" height="30">
+            <img src="img/logo.svg" width="30" height="30" alt="Логотип html academy">
           </a>
         </li>
         <li class="clients-logo">
-          <img src="http://placehold.it/150x100" width="30" height="30">
+          <img src="img/logo.svg" width="30" height="30" alt="Логотип барбершопа Бородинский">
         </li>
         <li class="clients-logo">
-          <img src="http://placehold.it/150x100" width="30" height="30">
+          <img src="img/logo.svg" width="30" height="30" alt="Логотип приложения Пинк">
         </li>
         <li class="clients-logo">
-          <img src="http://placehold.it/150x100" width="30" height="30">
+          <img src="img/logo.svg" width="30" height="30" alt="Логотип вязанных игрушек Мишка">
         </li>
       </ul>
     </section>
 
-<!--                             КАРТА                            -->
+    <!--                             КАРТА                            -->
 
     <section class="map">
 
@@ -191,7 +191,7 @@
     </section>
   </main>
 
-<!--                             ПОДВАЛ                            -->
+  <!--                             ПОДВАЛ                            -->
 
   <footer class="footer">
     <div class="footer-social">
@@ -206,18 +206,30 @@
           <a class="social-butoon" href="#">Инстаграм</a>
         </li>
       </ul>
-      <p class="footer-slogan">
-        <b>Давайте дружить, это выгодно!</b>
-      </p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+    <p class="footer-slogan">
+      <b>Давайте дружить, это выгодно!</b>
+    </p>
+    <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
 
-<!--                  МОДАЛЬНОЕ ОКНО ОБРАТНОЙ СВЯЗИ               -->
+  <!--                  МОДАЛЬНОЕ ОКНО ОБРАТНОЙ СВЯЗИ               -->
 
   <section class="modal modal-message">
-<h2>Напишите нам</h2>
-<!--дальше будет форма-->
-<span class="modal-close">X</span>
+    <h2>Напишите нам</h2>
+    <form class="feedback" action="/echo" method="post">
+      <div class="half-width">
+        <label for="user-field-id">Ваше имя:</label>
+        <input id="user-field-id" type="text" name="username" placeholder="Представьтесь пожалуйста">
+      </div>
+      <div class="half-width">
+        <label for="email-id">Ваш e-mail:</label>
+        <input id="email-id" type="text" name="username" placeholder="Для отправки ответа">
+      </div>
+      <label for="review">Текст письма:</label>
+      <textarea rows="5" placeholder="В свободной форме"></textarea>
+      <span class="modal-close">X</span>
+    </form>
   </section>
 </body>
 
