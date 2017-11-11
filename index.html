@@ -9,8 +9,8 @@
 <body>
   <header class="header">
     <nav class="navigation">
-      <a class="header-logo" href="index.html">
-        <img src="" width="111" height="24" alt="Логотип дизайн студии Нёрдс">
+      <a class="header-logo">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн студии Нёрдс">
       </a>
       <ul class="site-navigation">
         <li>
@@ -19,15 +19,17 @@
         <li>
           <a href="clients.html">Клиенты</a>
         </li>
-        <li class="site-navigation-current">
+        <li>
           <a href="catalog.html">Магазин</a>
         </li>
         <li>
           <a href="contacts.html">Контакты</a>
         </li>
       </ul>
-      <ul class="user-navigation">
-        <li class="user-busket">Корзина</li>
+      <ul class="user-busket">
+        <li>
+          <a href="busket.html">Корзина</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -47,7 +49,7 @@
       <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
       <a class="features-button" href="">УЗНАТЬ БОЛЬШЕ</a>
       <figure class="slider-content">
-        <img src="" width="280" height="200">
+        <img src="" width="760" height="431">
       </figure>
     </section>
     <!--
@@ -60,7 +62,7 @@
       <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
       <a class="features-button" href="">УЗНАТЬ БОЛЬШЕ</a>
       <figure class="slider-content-2">
-        <img src="" width="280" height="200">
+        <img src="" width="760" height="431">
       </figure>
     </section>
 
@@ -73,7 +75,7 @@
       <p>Работать днем как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
       <a class="features-button" href="">УЗНАТЬ БОЛЬШЕ</a>
       <figure class="slider-content-3">
-        <img src="" width="280" height="200">
+        <img src="" width="760" height="431">
       </figure>
     </section>
   -->
@@ -85,19 +87,19 @@
         <li class="preview-catalog-item">
           <h3>ВЕБ-САЙТЫ</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-          <img src="" width="50" height="25">
+          <img src="" width="300" height="146">
           <a class="preview-catalog-button" href="">ЗАКАЗАТЬ</a>
         </li>
         <li class="preview-catalog-item">
           <h3>ПРИЛОЖЕНИЯ</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <img src="" width="50" height="25">
+          <img src="" width="300" height="146">
           <a class="preview-catalog-button" href="">ЗАКАЗАТЬ</a>
         </li>
         <li class="preview-catalog-item">
           <h3>ПРЕЗЕНТАЦИИ</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <img src="" width="50" height="25">
+          <img src="" width="300" height="146">
           <a class="preview-catalog-button" href="">ЗАКАЗАТЬ</a>
         </li>
       </ul>
@@ -106,7 +108,7 @@
     <!--                             О КОМПАНИИ                            -->
 
     <section class="about-us">
-      <h2 class="visually-hidden">О нас</h2>
+      <h2 class="visually-hidden">О компании</h2>
       <p>
         <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
       </p>
@@ -122,7 +124,7 @@
         <li class="orders-item">
           <p>Мобильных приложений для iOS и Android</p>
         </li>
-        <li>
+        <li class="orders-item">
           <p>Слайдшоу и видео для корпоративных презентаций</p>
         </li>
       </ul>
@@ -130,7 +132,7 @@
 
     <section class="statistic">
       <h2 class="visually-hidden">Статистика</h2>
-      <img src="" width="50" height="25">
+      <img src="" width="360" height="208">
       <p>
         <strong>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</strong>
       </p>
@@ -147,9 +149,9 @@
           </th>
         </tr>
         <tr>
-        <td>Уровень самоотдачи</td>
-        <td>Соблюдение сроков</td>
-        <td>Минимальная предоплата</td>
+          <td>Уровень самоотдачи</td>
+          <td>Соблюдение сроков</td>
+          <td>Минимальная предоплата</td>
         </tr>
       </table>
     </section>
@@ -179,16 +181,22 @@
     <!--                             КАРТА                            -->
 
     <section class="map">
-
+<h2 class="visually-hidden">Карта города с адресом нашего офиса</h2>
+<p>
+  <img src="img/map.jpg" width="1438" height="414" alt="Офис компании по адресу Санкт-Петербург ул. Б. Конюшенная, д. 19/8">
+</p>
       <div class="contacts">
         <p class="contacts-name">
+          <h3 class="visually-hidden">Контакты</h3>
           <b>NЁRDS DESIGN STUDIO</b>
         </p>
         <p>191186, Санкт-Петербург,
           <br> ул. Б. Конюшенная, д. 19/8
         </p>
         <p> тел. +7(812)275-75-75</p>
+        <p>
         <a class="contacts-button" href="">НАПИШИТЕ НАМ</a>
+        </p>
       </div>
     </section>
   </main>
@@ -219,19 +227,22 @@
 
   <section class="modal modal-message">
     <h2>Напишите нам</h2>
-    <form class="feedback" action="/echo" method="post">
+    <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
       <div class="half-width">
         <label for="user-field-id">Ваше имя:</label>
         <input id="user-field-id" type="text" name="username" placeholder="Представьтесь пожалуйста">
       </div>
       <div class="half-width">
         <label for="email-id">Ваш e-mail:</label>
-        <input id="email-id" type="text" name="username" placeholder="Для отправки ответа">
+        <input id="email-id" type="text" name="username" placeholder="my@email.com">
       </div>
+      <div>
       <label for="review">Текст письма:</label>
-      <textarea rows="5" placeholder="В свободной форме"></textarea>
-      <span class="modal-close">X</span>
+      <textarea id="review" rows="5" placeholder="Ваше сообщение"></textarea>
+      </div>
+      <button class="button" type="submit">ОТПРАВИТЬ</button>
     </form>
+    <button class="modal-close" type="button">Закрыть окно обратной связи</button>
   </section>
 </body>
 
