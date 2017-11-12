@@ -42,9 +42,80 @@
 
     <section class="filters">
       <h2 class="visually-hidden">Параметры фильтра</h2>
-            <fieldset>
-              <legend>СТОИМОСТЬ:</legend>
-            </fieldset>
+
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get"
+        oninput="priceoutput.value=price.value">
+        <fieldset>
+          <legend>СТОИМОСТЬ:</legend>
+          <div class="price-range-block">
+            <label>
+              <input type="range" name="radio" id="price-range" min="0" max="15000" step="100"
+                aria-label="Ползунок выбора стоимости от и до">
+            </label>
+          </div>
+          <div class="half-width output-area">
+            <label for="price-range">ОТ
+              <output name="priceoutput">0</output>
+            </label>
+          </div>
+          <div class="half-width output-area">
+            <label for="price-range">ДО
+              <output name="priceoutput">15 000</output>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>СЕТКА:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                name="type-group" value="grid-type" id="gft" checked>
+              <label for="gft">Адаптивная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                name="type-group" value="fixed-type" id="fft">
+              <label for="fft">Фиксированная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                name="type-group" value="rubber-type" id="rft">
+              <label for="rft">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>ОСОБЕННОСТИ:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                name="features-block" id="filter-features-block">
+              <label for="filter-features-block">Блок приемуществ</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                name="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                name="busket-option" id="filter-busket-option">
+              <label for="filter-busket-option">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="filter-button button">ПОКАЗАТЬ</button>
+      </form>
     </section>
 
     <!--                             КАТАЛОГ                            -->
@@ -55,13 +126,13 @@
       <h3 class="catalog-options">СОРТИРОВАТЬ:</h3>
       <ul class="catalog-text-buttons">
         <li class="text-button button-current">
-          <a href="">ПО ЦЕНЕ</a>
+          <button class="text-button text-button-price" type="button">ПО ЦЕНЕ</button>
         </li>
         <li class="text-button">
-          <a href="">ПО ТИПУ</a>
+          <button class="text-button text-button-type" type="button">ПО ТИПУ</button>
         </li>
         <li class="text-button">
-          <a href="">ПО НАЗВАНИЮ</a>
+          <button class="text-button text-button-name" type="button">ПО НАЗВАНИЮ</button>
         </li>
       </ul>
       <ul class="catalog-list">
@@ -150,16 +221,22 @@
     <!--                             КАРТА                            -->
 
     <section class="map">
-
+      <h2 class="visually-hidden">Карта города с адресом нашего офиса и контактными данными</h2>
+      <p>
+        <img src="img/map.jpg" width="1438" height="414" alt="Офис компании по адресу Санкт-Петербург ул. Б. Конюшенная, д. 19/8">
+      </p>
       <div class="contacts">
         <p class="contacts-name">
+          <h3 class="visually-hidden">Контакты</h3>
           <b>NЁRDS DESIGN STUDIO</b>
         </p>
         <p>191186, Санкт-Петербург,
           <br> ул. Б. Конюшенная, д. 19/8
         </p>
         <p> тел. +7(812)275-75-75</p>
-        <a class="contacts-button" href="">НАПИШИТЕ НАМ</a>
+        <p>
+          <button class="contacts-button" type="button">НАПИШИТЕ НАМ</button>
+        </p>
       </div>
     </section>
   </main>
@@ -170,13 +247,13 @@
     <div class="footer-social">
       <ul>
         <li>
-          <a class="social-butoon" href="#">Вконтакте</a>
+          <a class="social-butoon" href="#" aria-label="Вконтакте"></a>
         </li>
         <li>
-          <a class="social-butoon" href="#">Фейсбук</a>
+          <a class="social-butoon" href="#" aria-label="Фейсбук"></a>
         </li>
         <li>
-          <a class="social-butoon" href="#">Инстаграм</a>
+          <a class="social-butoon" href="#" aria-label="Инстаграм"></a>
         </li>
       </ul>
     </div>
@@ -190,18 +267,22 @@
 
   <section class="modal modal-message">
     <h2>Напишите нам</h2>
-    <form class="feedback" action="/echo" method="post">
+    <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
       <div class="half-width">
         <label for="user-field-id">Ваше имя:</label>
         <input id="user-field-id" type="text" name="username" placeholder="Представьтесь пожалуйста">
       </div>
       <div class="half-width">
         <label for="email-id">Ваш e-mail:</label>
-        <input id="email-id" type="text" name="username" placeholder="Для отправки ответа">
+        <input id="email-id" type="text" name="username" placeholder="my@email.com">
       </div>
-      <label for="review">Текст письма:</label>
-      <textarea rows="5" placeholder="В свободной форме"></textarea>
-      <span class="modal-close">X</span>
+      <div>
+        <label for="review">Текст письма:</label>
+        <textarea id="review" rows="5" placeholder="Ваше сообщение"></textarea>
+      </div>
+      <button class="button" type="submit">ОТПРАВИТЬ</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть окно обратной связи</button>
   </section>
 </body>
 
