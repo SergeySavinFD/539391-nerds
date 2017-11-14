@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -40,22 +44,22 @@
 
     <!--                             СЛАЙДЕР                            -->
 
-    <section class="slider-features-1">
-      <h2 class="visually-hidden">Приемущества</h2>
-      <p>
+    <section class="slider-features">
+      <h2 class="visually-hidden">Наши приемущества</h2>
+      <p class="slider-slogan">
         <b>Долго, дорого, скурпулезно.
         </b>
       </p>
-      <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+      <p class="slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
       <a class="features-button" href="">УЗНАТЬ БОЛЬШЕ</a>
       <figure class="slider-content">
         <img src="" width="760" height="431">
       </figure>
     </section>
     <!--
-    <section class="slider-features-2">
-      <h2 class="visually-hidden">Приемущества-2</h2>
-      <p>
+    <section class="slider-features">
+      <h2 class="visually-hidden">Наши приемущества-2</h2>
+      <p class="slider-slogan>
         <b>Любим математику как никто другой
         </b>
       </p>
@@ -66,9 +70,9 @@
       </figure>
     </section>
 
-    <section class="slider-features-3">
-      <h2 class="visually-hidden">Приемущества-3</h2>
-      <p>
+    <section class="slider-features">
+      <h2 class="visually-hidden">Наши приемущества-3</h2>
+      <p class="slider-slogan>
         <b>Только ночь, только хардкор
         </b>
       </p>
@@ -167,13 +171,19 @@
           </a>
         </li>
         <li class="clients-logo">
-          <img src="img/logo-client-borod-2.png" width="205" height="90" alt="Логотип барбершопа Бородинский">
+          <a class="barbershop" href="#">
+            <img src="img/logo-client-borod-2.png" width="205" height="90" alt="Логотип барбершопа Бородинский">
+          </a>
         </li>
         <li class="clients-logo">
-          <img src="img/logo-client-pink-3.png" width="185" height="50" alt="Логотип приложения Пинк">
+          <a class="pink" href="#">
+            <img src="img/logo-client-pink-3.png" width="185" height="50" alt="Логотип приложения Пинк">
+          </a>
         </li>
         <li class="clients-logo">
-          <img src="img/logo-client-mishka-4.png" width="174" height="85" alt="Логотип вязанных игрушек Мишка">
+          <a class="mishka" href="#">
+            <img src="img/logo-client-mishka-4.png" width="174" height="85" alt="Логотип вязанных игрушек Мишка">
+          </a>
         </li>
       </ul>
     </section>
@@ -195,7 +205,7 @@
         </p>
         <p> тел. +7(812)275-75-75</p>
         <p>
-          <button class="contacts-button" type="button">НАПИШИТЕ НАМ</button>
+          <a class="contacts-button" href="#">НАПИШИТЕ НАМ</a>
         </p>
       </div>
     </section>
@@ -228,18 +238,18 @@
   <section class="modal modal-message">
     <h2>Напишите нам</h2>
     <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
-      <div class="half-width">
+      <p class="half-width">
         <label for="user-field-id">Ваше имя:</label>
         <input id="user-field-id" type="text" name="username" placeholder="Представьтесь пожалуйста">
-      </div>
-      <div class="half-width">
+      </p>
+      <p class="half-width">
         <label for="email-id">Ваш e-mail:</label>
         <input id="email-id" type="text" name="username" placeholder="my@email.com">
-      </div>
-      <div>
+      </p>
+      <p>
         <label for="review">Текст письма:</label>
         <textarea id="review" rows="5" placeholder="Ваше сообщение"></textarea>
-      </div>
+      </p>
       <button class="button" type="submit">ОТПРАВИТЬ</button>
     </form>
     <button class="modal-close" type="button">Закрыть окно обратной связи</button>

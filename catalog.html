@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -47,22 +51,22 @@
         oninput="priceoutput.value=price.value">
         <fieldset>
           <legend>СТОИМОСТЬ:</legend>
-          <div class="price-range-block">
+          <p class="price-range-block">
             <label>
               <input type="range" name="radio" id="price-range" min="0" max="15000" step="100"
                 aria-label="Ползунок выбора стоимости от и до">
             </label>
-          </div>
-          <div class="half-width output-area">
+          </p>
+          <p class="half-width output-area">
             <label for="price-range">ОТ
               <output name="priceoutput">0</output>
             </label>
-          </div>
-          <div class="half-width output-area">
+          </p>
+          <p class="half-width output-area">
             <label for="price-range">ДО
               <output name="priceoutput">15 000</output>
             </label>
-          </div>
+          </p>
         </fieldset>
         <fieldset>
           <legend>СЕТКА:</legend>
@@ -126,13 +130,19 @@
       <h3 class="catalog-options">СОРТИРОВАТЬ:</h3>
       <ul class="catalog-text-buttons">
         <li class="text-button button-current">
-          <button class="text-button text-button-price" type="button">ПО ЦЕНЕ</button>
+          <a class="text-button text-button-price" href="#">ПО ЦЕНЕ</a>
         </li>
         <li class="text-button">
-          <button class="text-button text-button-type" type="button">ПО ТИПУ</button>
+          <a class="text-button text-button-type" href="#">ПО ТИПУ</a>
         </li>
         <li class="text-button">
-          <button class="text-button text-button-name" type="button">ПО НАЗВАНИЮ</button>
+          <a class="text-button text-button-name" href="#">ПО НАЗВАНИЮ</a>
+        </li>
+        <li class="trigon-button">
+          <a class="trigon-button trigon-button-select" aria-label="Сортировать по возрастанию"></a>
+        </li>
+        <li class="trigon-button">
+          <a class="trigon-button trigon-button-select" aria-label="Сортировать по убыванию"></a>
         </li>
       </ul>
       <ul class="catalog-list">
@@ -235,7 +245,7 @@
         </p>
         <p> тел. +7(812)275-75-75</p>
         <p>
-          <button class="contacts-button" type="button">НАПИШИТЕ НАМ</button>
+          <a class="contacts-button" href="#">НАПИШИТЕ НАМ</a>
         </p>
       </div>
     </section>
@@ -268,18 +278,18 @@
   <section class="modal modal-message">
     <h2>Напишите нам</h2>
     <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
-      <div class="half-width">
+      <p class="half-width">
         <label for="user-field-id">Ваше имя:</label>
         <input id="user-field-id" type="text" name="username" placeholder="Представьтесь пожалуйста">
-      </div>
-      <div class="half-width">
+      </p>
+      <p class="half-width">
         <label for="email-id">Ваш e-mail:</label>
         <input id="email-id" type="text" name="username" placeholder="my@email.com">
-      </div>
-      <div>
+      </p>
+      <p>
         <label for="review">Текст письма:</label>
         <textarea id="review" rows="5" placeholder="Ваше сообщение"></textarea>
-      </div>
+      </p>
       <button class="button" type="submit">ОТПРАВИТЬ</button>
     </form>
     <button class="modal-close" type="button">Закрыть окно обратной связи</button>
