@@ -14,6 +14,13 @@ a {
 }
 
 
+/* непонятно как все таки скрывать */
+
+.visually-hidden {
+  display: none;
+}
+
+
 /*.visually-hidden {
 position: absolute;
 width: 1px;
@@ -64,10 +71,17 @@ overflow: hidden;
   color: #a6a6a6;
 }
 
-.site-navigation-current a {
+
+/* разобраться с нижним подчеркиванием */
+
+.site-navigation-current a::after {
+  content: "";
   text-decoration: underline;
   text-decoration-color: #fb565a;
 }
+
+
+/*            СЛАЙДЕР                  */
 
 .slider-features .slider-slogan {
   font-size: 55px;
@@ -95,6 +109,18 @@ overflow: hidden;
   color: #ffffff;
 }
 
+.slider-features a:hover {
+  background-color: #e74246;
+}
+
+.slider-features a:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+/*            ПРЕВЬЮ КАТАЛОГА                  */
+
 .preview-catalog h3 {
   font-size: 24px;
   line-height: 30px;
@@ -105,11 +131,162 @@ overflow: hidden;
 .preview-catalog p {
   font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: 400;
   color: #283136;
 }
 
-.preview-catalog a {
+.preview-button-web {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  background-color: #fb565a;
+  color: #ffffff;
+}
+
+.preview-button-web:hover {
+  background-color: #e74246;
+}
+
+.preview-button-web:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.preview-button-apps {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  background-color: #00ca74;
+  color: #ffffff;
+}
+
+.preview-button-apps:hover {
+  background-color: #00bc6c;
+}
+
+.preview-button-apps:active {
+  background-color: #00aa62;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.preview-button-present {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  background-color: #efc84a;
+  color: #ffffff;
+}
+
+.preview-button-present:hover {
+  background-color: #eab534;
+}
+
+.preview-button-present:active {
+  background-color: #e5a722;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.preview-catalog {
+  background-color: #ffffff
+}
+
+.preview-catalog-list {
+  list-style: none;
+}
+
+
+/*            О КОМПАНИИ                  */
+
+.about-us b {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.about-us p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+}
+
+.about-us .we-made {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.orders-list {
+  list-style: none;
+}
+
+.statistic .statistic-slogan {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.statistic-table th {
+  font-size: 45px;
+  line-height: 10.06px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.statistic-table td {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  padding-top: 20px;
+  text-align: left;
+  color: #283136;
+}
+
+.statistic-table {
+  padding-top: 20px;
+  vertical-align: middle;
+}
+
+
+/*            КЛИЕНТЫ                  */
+
+.clients-list {
+  list-style: none;
+}
+
+.clients-list a {
+  opacity: 0.2;
+}
+
+.clients-list a:hover {
+  opacity: 1;
+}
+
+.clients-list a:active {
+  opacity: 0.1;
+}
+
+
+/*                  КАРТА С КОНТАКТАМИ              */
+
+.contacts b {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.contacts p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.contacts a {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -118,21 +295,179 @@ overflow: hidden;
 }
 
 
+/*                 ПОДВАЛ                     */
+
+.social-list {
+  list-style: none;
+}
+
+.footer b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.footer p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #444444;
+}
 
 
+/*              МОДАЛЬНОЕ ОКНО           */
+
+.modal h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.modal .feedback label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.feedback input[type="text"],
+.feedback textarea[id="review"] {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(68, 68, 68, 0.4);
+  border: 1px solid rgba(68, 68, 68, 0.4);
+}
+
+.feedback input::-webkit-input-placeholder,
+.feedback textarea::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.feedback input::-moz-placeholder,
+.feedback textarea::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.feedback input:hover,
+.feedback textarea:hover,
+.feedback input:hover::-webkit-input-placeholder,
+.feedback textarea:hover::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+  border-color: rgba(68, 68, 68, 0.6);
+}
+
+.feedback input:focus,
+.feedback textarea:focus,
+.feedback input:focus::-webkit-input-placeholder,
+.feedback textarea:focus::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 1);
+  border-color: rgba(68, 68, 68, 1);
+}
+
+.feedback input:hover,
+.feedback textarea:hover,
+.feedback input:hover::-moz-placeholder,
+.feedback textarea:hover::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+  border-color: rgba(68, 68, 68, 0.6);
+}
+
+.feedback input:focus,
+.feedback textarea:focus,
+.feedback input:focus::-moz-placeholder,
+.feedback textarea:focus::-moz-placeholder {
+  color: rgba(68, 68, 68, 1);
+  border-color: rgba(68, 68, 68, 1);
+}
+
+.feedback input:invalid,
+.feedback textarea:invalid {
+  color: #e74246;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  background-color: #fb565a;
+  border: none;
+}
 
 
+/* ----------------------------    КАТАЛОГ --------------------------------- */
+
+.catalog-container h1 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #eeeeee;
+}
 
 
+/*                        ФИЛЬТР СТОИМОСТИ                    */
 
+fieldset {
+  border: none;
+}
 
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
 
+.filter .price-range-block {
+  background-color: #eeeeee;
+}
 
+.output-area label {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #283136;
+}
 
+.output-area output {
+  background-color: #eeeeee;
+}
 
+.filter ul {
+  list-style: none;
+  line-height: 20px;
+}
 
+.filter .filter-option label {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #283136;
+}
 
+.filter .filter-option input:hover + label,
+.filter .filter-option input:focus + label {
+  color: #000000;
+}
 
+.filter .filter-option input:disabled + label {
+  color: rgba(40, 49, 54, 0.3)
+}
 
+.filter .filter-button {
+  font: inherit;
+  text-align: center;
+  font-weight: 500;
+  color: #000000;
+  vertical-align: middle;
+  background-color: #eeeeee;
+  border: none;
+}
 
-
+.filter button:hover {
+  background-color: dfdfdf;
+}
