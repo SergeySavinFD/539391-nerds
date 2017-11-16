@@ -398,7 +398,7 @@ overflow: hidden;
 }
 
 
-/* ----------------------------    КАТАЛОГ --------------------------------- */
+/* ----------------------------    МАГАЗИН --------------------------------- */
 
 .catalog-container h1 {
   font-size: 55px;
@@ -449,12 +449,12 @@ fieldset {
   color: #283136;
 }
 
-.filter .filter-option input:hover + label,
-.filter .filter-option input:focus + label {
+.filter .filter-option input:hover+label,
+.filter .filter-option input:focus+label {
   color: #000000;
 }
 
-.filter .filter-option input:disabled + label {
+.filter .filter-option input:disabled+label {
   color: rgba(40, 49, 54, 0.3)
 }
 
@@ -469,5 +469,131 @@ fieldset {
 }
 
 .filter button:hover {
-  background-color: dfdfdf;
+  background-color: #dfdfdf;
 }
+
+.filter button:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
+  box-shadow: inset 0px 2px 0px #bfbfbf;
+}
+
+
+/*                           КАТАЛОГ                         */
+
+.catalog h3 {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.catalog .catalog-text-buttons {
+  list-style: none;
+}
+
+.catalog .catalog-text-buttons a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog .catalog-text-buttons a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog .catalog-text-buttons a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.catalog .button-current a {
+  color: rgba(0, 0, 0, 1);
+}
+
+.catalog .catalog-list {
+  list-style: none;
+}
+
+.catalog-list .item-price {
+  background-color: #eeeeee;
+}
+
+.catalog-list .item-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.catalog-list p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.catalog-list a:not(.item-name) {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  background-color: #fb565a;
+  color: #ffffff;
+}
+
+.catalog-list a:not(.item-name):hover {
+  background-color: #e74246;
+}
+
+.catalog-list a:not(.item-name):active {
+  background-color: #d7373b;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-list a {
+  font-weight: 500;
+  background-color: #eeeeee;
+  color: #000000;
+  border: 1px solid #eeeeee;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus {
+  background-color: #dfdfdf;
+  color: #000000;
+  border: 1px solid #dfdfdf;
+}
+
+.pagination-list a:active {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 2px 0px #bfbfbf;
+  border: 1px solid #d5d5d5;
+}
+
+.pagination-list .pagination-item-current a {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #dbdbdb;
+}
+
+.pagination-list .pagination-item-current a:hover,
+.pagination-list .pagination-item-current a:focus {
+  background-color: #dfdfdf;
+  color: #000000;
+  border: 1px solid #dfdfdf;
+}
+
+.pagination-list .pagination-item-current a:active {
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 2px 0px #bfbfbf;
+  border: 1px solid #d5d5d5;
+}
+
+
+
+
