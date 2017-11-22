@@ -60,24 +60,6 @@ a {
 
 /* разобраться с нижним подчеркиванием */
 
-.site-navigation {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-.site-navigation li {
-  padding: 0 20px;
-}
-
-a {
-  text-decoration: none;
-  font-size: 18px;
-  color: #283136;
-}
-
 .site-navigation-current::after {
   content: '';
   display: block;
@@ -86,9 +68,6 @@ a {
   margin-top: 1px;
   background-color: #fb565a;
 }
-
-
-/*                    правильно ли подчеркивание?              */
 
 
 /*            СЛАЙДЕР                  */
@@ -417,7 +396,7 @@ sup {
 
 /* ----------------------------    МАГАЗИН --------------------------------- */
 
-.catalog-container h1 {
+.container h1 {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -617,16 +596,16 @@ fieldset {
 
 html,
 body {
-  min-width: 100%;
-  min-height: 2746px;
+  width: 100%;
+  height: 3213px;
 }
 
 body {
   /*              временно для сетки             */
-  background-image: url("../img/nerds-index.jpg");
+  background-image: url("../img/nerds-catalog.jpg");
   background-size: 1440px auto;
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position: top center;
 }
 
 .header {
@@ -639,8 +618,8 @@ body {
 
 .navigation {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   /*              временно для сетки             */
   min-height: 115px;
 }
@@ -658,7 +637,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 660px;
+  width: 440px;
   /*              временно для сетки             */
   outline: 2px solid rgb(232, 245, 53);
   background-color: rgba(233, 250, 85, 0.3);
@@ -818,20 +797,25 @@ body {
 /*-------------------КАРТА-----------------------*/
 
 .map {
+  width: 1440px;
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
   margin-bottom: 67px;
+  position: relative;
   /*              временно для сетки             */
   outline: 2px solid rgba(85, 129, 250, 1);
   background-color: rgba(85, 129, 250, 0.3);
-  min-height: 413px;
+  min-height: 414px;
 }
 
 .contacts {
+  content: "";
+  position: absolute;
   margin: 54px 0;
   width: 320px;
+  background-color: #ffffff;
   /*              временно для сетки             */
   outline: 2px solid rgb(232, 245, 53);
   background-color: rgba(233, 250, 85, 0.3);
@@ -872,4 +856,56 @@ body {
   outline: 2px solid rgb(232, 245, 53);
   background-color: rgba(233, 250, 85, 0.3);
   min-height: 82px;
+}
+
+
+/*---------------------------КАТАЛОГ------------------------*/
+
+
+/*                 ЗАГАЛОВОК                     */
+
+.catalog-name-block {
+  display: flex;
+  margin-bottom: 57px;
+  /*              временно для сетки             */
+  outline: 2px solid rgba(85, 129, 250, 1);
+  background-color: rgba(85, 129, 250, 0.3);
+  min-height: 241px;
+}
+
+.catalog-name {
+  width: 760px;
+  padding: 0;
+  margin: auto;
+  /*              временно для сетки             */
+  outline: 2px solid rgb(232, 245, 53);
+  background-color: rgba(233, 250, 85, 0.3);
+  min-height: 55px;
+}
+
+
+/*-------------------ФИЛЬТР----------------------*/
+
+.catalog-colums {
+  display: flex;
+  justify-content: space-between;
+  /*              временно для сетки             */
+  outline: 2px solid rgb(250, 104, 85);
+  background-color: rgba(250, 104, 85, 0.3);
+}
+
+.filters {
+  width: 260px;
+  /*              временно для сетки             */
+  outline: 2px solid rgba(85, 129, 250, 1);
+  background-color: rgba(85, 129, 250, 0.3);
+  min-height: 776px;
+}
+
+.catalog {
+  width: 760px;
+  /*              временно для сетки             */
+  outline: 2px solid rgba(85, 129, 250, 1);
+  background-color: rgba(85, 129, 250, 0.3);
+  min-height: 2103px;
 }
