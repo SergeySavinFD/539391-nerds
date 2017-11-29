@@ -175,7 +175,7 @@ input[type="radio"].visually-hidden {
 
 .slider-item {
   display: none;
-  padding: 78px 0 80px 0;
+  padding: 38px 0 80px 0;
   margin: 0;
 }
 
@@ -267,7 +267,7 @@ input[type="radio"].visually-hidden {
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 150px;
+  bottom: 110px;
   z-index: 100;
   width: 160px;
   height: 18px;
@@ -520,6 +520,7 @@ sup {
 /*            КЛИЕНТЫ                  */
 
 .clients {
+  position: relative;
   margin-bottom: 130px;
 }
 
@@ -543,6 +544,19 @@ sup {
 
 .clients-logo {
   width: 260px;
+}
+
+.clients-list::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 52px;
+  height: 2px;
+  transform: rotate(90deg);
+  left: 260px;
+  top: 72px;
+  box-shadow: 0 -260px 0 #eeeeee, 0 -530px 0 #eeeeee;
+  background-color: #eeeeee;
 }
 
 .clients-list {
@@ -612,6 +626,15 @@ sup {
   width: 219px;
   margin: 0;
   margin-top: 35px;
+}
+
+.contacts-button:hover {
+  background-color: #e74246;
+}
+
+.contacts-button:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -695,14 +718,58 @@ sup {
 
 /*              МОДАЛЬНОЕ ОКНО           */
 
+.modal {
+  position: fixed;
+  background-color: #ffffff;
+}
+
+.modal-message {
+  top: 250px;
+  left: 50%;
+  width: 760px;
+  margin-left: -480px;
+  padding: 80px 100px;
+  box-shadow: 0 10px 10px 5px rgba(77, 77, 77, 0.4);
+}
+
 .modal h2 {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  margin: 0 0 40px 0;
   color: #000000;
 }
 
-.modal .feedback label {
+.feedback {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.half-width {
+  width: 360px;
+  margin: 0;
+}
+
+.text-aria {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.half-width input {
+  box-sizing: border-box;
+  font: inherit;
+  width: 360px;
+  padding: 15px 0 15px 15px;
+}
+
+.text-aria textarea {
+  width: 760px;
+  margin: 0;
+  padding: 15px 0 0 15px;
+}
+
+.feedback label {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
@@ -710,12 +777,15 @@ sup {
 }
 
 .feedback input[type="text"],
+.feedback input[type="email"],
 .feedback textarea[id="review"] {
+  font: inherit;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  margin-top: 7px;
   color: rgba(68, 68, 68, 0.4);
-  border: 1px solid rgba(68, 68, 68, 0.4);
+  border: 2px solid rgba(68, 68, 68, 0.2);
 }
 
 .feedback input::-webkit-input-placeholder,
@@ -733,7 +803,7 @@ sup {
 .feedback input:hover::-webkit-input-placeholder,
 .feedback textarea:hover::-webkit-input-placeholder {
   color: rgba(68, 68, 68, 0.5);
-  border-color: rgba(68, 68, 68, 0.6);
+  border-color: rgba(68, 68, 68, 0.4);
 }
 
 .feedback input:focus,
@@ -749,7 +819,7 @@ sup {
 .feedback input:hover::-moz-placeholder,
 .feedback textarea:hover::-moz-placeholder {
   color: rgba(68, 68, 68, 0.5);
-  border-color: rgba(68, 68, 68, 0.6);
+  border-color: rgba(68, 68, 68, 0.4);
 }
 
 .feedback input:focus,
@@ -765,13 +835,37 @@ sup {
   color: #e74246;
 }
 
-.button {
+.modal-close {
+  position: absolute;
+  top: 78px;
+  right: 88px;
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/close-cross.svg);
+  opacity: 0.3;
+  background-color: #ffffff;
+  border: 0;
+  cursor: pointer;
+}
+
+.feedback .button {
+  width: 260px;
   font: inherit;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
   background-color: #fb565a;
   border: none;
+  cursor: pointer;
+}
+
+.feedback .button:hover {
+  background-color: #e74246;
+}
+
+.feedback .button:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -1175,6 +1269,7 @@ sup {
 .catalog-item:hover,
 .catalog-item:focus {
   background-color: #4d4d4d;
+  box-shadow: 0 5px 10px 0 rgba(77, 77, 77, 0.3);
 }
 
 .catalog-item img {
