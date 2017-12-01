@@ -55,6 +55,7 @@ input[type="radio"].visually-hidden {
   width: 160px;
   height: 65px;
   align-self: flex-end;
+  margin-bottom: 3px;
 }
 
 .navigation {
@@ -74,8 +75,9 @@ input[type="radio"].visually-hidden {
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
   box-sizing: border-box;
+  outline: 2px solid red;
 }
 
 .navigation-wrapper .container {
@@ -109,7 +111,7 @@ input[type="radio"].visually-hidden {
   width: 15px;
   height: 15px;
   top: 82px;
-  left: 28px;
+  left: 43px;
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -163,7 +165,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   position: relative;
   margin: 0;
-  margin-bottom: 76px;
+  margin-bottom: 81px;
   background-color: #eeeeee;
 }
 
@@ -180,13 +182,9 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item:nth-child(1) {
-  display: block;
-}
-
-.slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 100% 18px;
+  background-position: 430px 17px;
 }
 
 .slider-item:nth-child(2) {
@@ -232,7 +230,8 @@ input[type="radio"].visually-hidden {
 .slider-item h3 {
   max-width: 600px;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  margin-top: 38px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -242,7 +241,7 @@ input[type="radio"].visually-hidden {
 .slider-item p {
   padding: 0;
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 42px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -267,7 +266,7 @@ input[type="radio"].visually-hidden {
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 110px;
+  bottom: 103px;
   z-index: 100;
   width: 160px;
   height: 18px;
@@ -306,14 +305,16 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-weight: 700;
   padding-top: 150px;
+  margin-bottom: 5px;
   color: #000000;
 }
 
 .preview-catalog p {
+  width: 260px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  padding: 0 0 10px 0;
+  padding-bottom: 18px;
   color: #283136;
 }
 
@@ -372,15 +373,17 @@ input[type="radio"].visually-hidden {
 
 .preview-catalog {
   background-color: #ffffff;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 .preview-catalog::after {
   content: '';
+  position: relative;
   display: block;
-  width: 100%;
+  width: 1160px;
   height: 2px;
   margin-top: 81px;
+  left: 370px;
   background-color: #eeeeee;
 }
 
@@ -417,7 +420,7 @@ input[type="radio"].visually-hidden {
 .about-company {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 72px;
+  margin-bottom: 100px;
 }
 
 .about-us {
@@ -428,6 +431,7 @@ input[type="radio"].visually-hidden {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  margin-bottom: 10px;
   padding: 0;
   color: #000000;
 }
@@ -459,8 +463,9 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  margin-left: 2px;
   color: #283136;
-  padding: 20px 0;
+  padding: 11px 0;
 }
 
 .orders-list li::before {
@@ -468,7 +473,8 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 20px;
+  left: 1px;
+  width: 25px;
   height: 2px;
   margin-right: 5px;
   background-color: #fb565a;
@@ -485,7 +491,9 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
-  margin-top: 270px;
+  margin-top: 247px;
+  margin-left: 18px;
+  margin-bottom: 52px;
   color: #000000;
 }
 
@@ -493,20 +501,24 @@ input[type="radio"].visually-hidden {
   font-size: 45px;
   line-height: 10.06px;
   font-weight: 700;
+  text-align: left;
+  padding-left: 0;
   color: #000000;
 }
 
 .statistic-table td {
+  width: 33.3%;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  padding-top: 20px;
+  padding: 0;
+  padding-top: 34px;
   text-align: left;
   color: #283136;
 }
 
 .statistic-table {
-  padding-top: 20px;
+  width: 100%;
   vertical-align: middle;
 }
 
@@ -521,24 +533,28 @@ sup {
 
 .clients {
   position: relative;
-  margin-bottom: 130px;
+  margin-bottom: 120px;
 }
 
 .clients::before {
   content: '';
   display: block;
-  width: 100%;
+  position: absolute;
+  width: 1160px;
   height: 2px;
-  margin-bottom: 40px;
+  margin-top: -50px;
+  left: 370px;
   background-color: #eeeeee;
 }
 
 .clients::after {
   content: '';
   display: block;
-  width: 100%;
+  position: absolute;
+  width: 1160px;
   height: 2px;
-  margin-top: 40px;
+  margin-top: 39px;
+  left: 370px;
   background-color: #eeeeee;
 }
 
@@ -553,16 +569,20 @@ sup {
   width: 52px;
   height: 2px;
   transform: rotate(90deg);
-  left: 260px;
-  top: 72px;
-  box-shadow: 0 -260px 0 #eeeeee, 0 -530px 0 #eeeeee;
+  left: 623px;
+  top: 42px;
+  box-shadow: 0 -302px 0 #eeeeee, 0 -602px 0 #eeeeee;
   background-color: #eeeeee;
 }
 
 .clients-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0;
+  margin-right: -40px;
+  padding: 0;
+  padding-left: 30px;
   list-style: none;
 }
 
@@ -582,19 +602,21 @@ sup {
 /*                  КАРТА С КОНТАКТАМИ              */
 
 .map {
-  width: 1440px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: auto;
-  padding: 0;
+  min-height: 416px;
   margin-bottom: 70px;
   position: relative;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .contacts {
   content: "";
   position: absolute;
-  left: 140px;
+  left: 372px;
   margin: 54px 0;
   padding: 50px;
   background-color: #ffffff;
@@ -604,6 +626,7 @@ sup {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  margin: 0;
   color: #000000;
 }
 
@@ -611,6 +634,7 @@ sup {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+  margin-top: 19px;
   color: #666666;
 }
 
@@ -625,7 +649,8 @@ sup {
 .contacts-button {
   width: 219px;
   margin: 0;
-  margin-top: 35px;
+  margin-top: 40px;
+  margin-bottom: -13px;
 }
 
 .contacts-button:hover {
@@ -686,7 +711,7 @@ sup {
 
 .social-list {
   width: 265px;
-  margin: 0 130px 0 0;
+  margin: 0 140px 0 0;
   padding: 0;
   list-style: none;
 }
@@ -721,6 +746,7 @@ sup {
 .modal {
   position: fixed;
   background-color: #ffffff;
+  display: none;
 }
 
 .modal-message {
