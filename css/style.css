@@ -372,18 +372,7 @@ input[type="radio"].visually-hidden {
 
 .preview-catalog {
   background-color: #ffffff;
-  margin-bottom: 30px;
-}
-
-.preview-catalog::after {
-  content: '';
-  position: relative;
-  display: block;
-  width: 1160px;
-  height: 2px;
-  margin-top: 81px;
-  left: 370px;
-  background-color: #eeeeee;
+  margin-bottom: 114px;
 }
 
 .preview-catalog-list {
@@ -393,6 +382,16 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.preview-catalog-list::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1160px;
+  height: 2px;
+  margin-top: 430px;
+  background-color: #eeeeee;
 }
 
 .preview-catalog-web {
@@ -419,7 +418,7 @@ input[type="radio"].visually-hidden {
 .about-company {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 53px;
 }
 
 .about-us {
@@ -532,29 +531,14 @@ sup {
 
 .clients {
   position: relative;
-  margin-bottom: 120px;
-}
-
-.clients::before {
-  content: '';
-  display: block;
-  position: absolute;
   width: 1160px;
-  height: 2px;
-  margin-top: -50px;
-  left: 370px;
-  background-color: #eeeeee;
-}
-
-.clients::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 1160px;
-  height: 2px;
-  margin-top: 39px;
-  left: 370px;
-  background-color: #eeeeee;
+  margin: auto;
+  margin-bottom: 80px;
+  padding-top: 47px;
+  padding-bottom: 35px;
+  vertical-align: middle;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .clients-logo {
@@ -568,8 +552,8 @@ sup {
   width: 52px;
   height: 2px;
   transform: rotate(90deg);
-  left: 623px;
-  top: 42px;
+  left: 252px;
+  top: 85px;
   box-shadow: 0 -302px 0 #eeeeee, 0 -602px 0 #eeeeee;
   background-color: #eeeeee;
 }
@@ -581,7 +565,7 @@ sup {
   margin: 0;
   margin-right: -40px;
   padding: 0;
-  padding-left: 30px;
+  padding-left: 25px;
   list-style: none;
 }
 
@@ -1018,7 +1002,7 @@ sup {
   width: 60px;
   padding: 9px 10px;
   margin-left: 10px;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   text-align: center;
   color: #283136;
