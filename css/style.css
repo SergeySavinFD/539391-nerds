@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -148,7 +148,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation-current::after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 2px;
@@ -385,7 +385,7 @@ input[type="radio"].visually-hidden {
 }
 
 .preview-catalog-list::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 1160px;
@@ -467,7 +467,7 @@ input[type="radio"].visually-hidden {
 }
 
 .orders-list li::before {
-  content: '';
+  content: "";
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -535,18 +535,18 @@ sup {
   margin: auto;
   margin-bottom: 80px;
   padding-top: 47px;
-  padding-bottom: 35px;
+  padding-bottom: 37px;
   vertical-align: middle;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
 
 .clients-logo {
-  width: 260px;
+  width: 180px;
 }
 
 .clients-list::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 52px;
@@ -563,9 +563,9 @@ sup {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  margin-right: -40px;
-  padding: 0;
-  padding-left: 25px;
+  margin-top: -2px;
+  margin-right: 36px;
+  padding-left: 34px;
   list-style: none;
 }
 
@@ -617,7 +617,7 @@ sup {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  margin-top: 19px;
+  margin-top: 21px;
   color: #666666;
 }
 
@@ -720,7 +720,7 @@ sup {
 
 .footer-slogan {
   width: 565px;
-  margin: 0;
+  margin: 4px 0 -6px 0;
 }
 
 
@@ -850,7 +850,7 @@ sup {
   right: 88px;
   width: 21px;
   height: 21px;
-  background-image: url(../img/close-cross.svg);
+  background-image: url("../img/close-cross.svg");
   opacity: 0.3;
   background-color: #ffffff;
   border: 0;
