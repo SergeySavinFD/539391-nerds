@@ -41,6 +41,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 500;
   text-align: center;
+  text-transform: uppercase;
   background-color: #fb565a;
   color: #ffffff;
   border-radius: 3px;
@@ -124,6 +125,7 @@ input[type="radio"].visually-hidden {
 .site-navigation a,
 .user-busket a {
   display: block;
+  text-transform: uppercase;
   padding: 75px 0 12px 0;
   vertical-align: middle;
   color: #000000;
@@ -300,6 +302,7 @@ input[type="radio"].visually-hidden {
 /*            ПРЕВЬЮ КАТАЛОГА                  */
 
 .preview-catalog h3 {
+  text-transform: uppercase;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -326,6 +329,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 500;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
   border-radius: 3px;
   border: none;
@@ -371,8 +375,13 @@ input[type="radio"].visually-hidden {
 }
 
 .preview-catalog {
+  width: 1160px;
+  min-height: 430px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #ffffff;
-  margin-bottom: 114px;
+  margin-bottom: 28px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .preview-catalog-list {
@@ -382,16 +391,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.preview-catalog-list::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 1160px;
-  height: 2px;
-  margin-top: 430px;
-  background-color: #eeeeee;
 }
 
 .preview-catalog-web {
@@ -446,6 +445,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us .we-made {
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -486,6 +486,7 @@ input[type="radio"].visually-hidden {
 }
 
 .statistic .statistic-slogan {
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -596,6 +597,12 @@ sup {
   background-position: center center;
 }
 
+.map iframe {
+  width: 100%;
+  height: 416px;
+  border: 0;
+}
+
 .contacts {
   content: "";
   position: absolute;
@@ -606,6 +613,7 @@ sup {
 }
 
 .contacts h3 {
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -773,7 +781,8 @@ sup {
 }
 
 .text-aria textarea {
-  width: 760px;
+  resize: none;
+  width: 742px;
   margin: 0;
   padding: 15px 0 0 15px;
 }
@@ -877,6 +886,52 @@ sup {
   color: rgba(255, 255, 255, 0.3);
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
 
 /* ----------------------------    МАГАЗИН --------------------------------- */
 
@@ -917,6 +972,7 @@ sup {
 }
 
 .filter legend {
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -1189,6 +1245,7 @@ sup {
 }
 
 .catalog h3 {
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -1224,6 +1281,7 @@ sup {
 }
 
 .catalog-text-buttons a {
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -1352,6 +1410,10 @@ sup {
   margin: 40px 80px 40px 80px;
 }
 
+.catalog-list a {
+  text-transform: uppercase;
+}
+
 .catalog-list a:not(.item-name) {
   font-size: 16px;
   line-height: 18px;
@@ -1388,6 +1450,7 @@ sup {
 
 .pagination-list a {
   display: block;
+  text-transform: uppercase;
   padding: 12px 19px;
   font-weight: 500;
   background-color: #eeeeee;
